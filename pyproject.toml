@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools >= 61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "polysolvlib"
+authors = [{name = "Sam Clark", email = "my@email.com"}]
+requires-python = ">= 3.8"
+readme = "README.md"
+description = ""
+
+keywords = []
+dependencies = ["cowsay"]
+classifiers = []
+dynamic = ["version"]
+
+[project.urls]
+Homepage="https://github.com/XXX/polysolvlib"
+Repository="https://github.com/XXX/polysolvlib.git"
+
+[tool.setuptools.dynamic]
+version = {attr = "polysolve.__version__"}

@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: polysolvlib
+Version: 0.2
+Author-email: Sam Clark <my@email.com>
+Project-URL: Homepage, https://github.com/XXX/polysolvlib
+Project-URL: Repository, https://github.com/XXX/polysolvlib.git
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: cowsay

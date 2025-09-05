@@ -8,6 +8,33 @@ CBRT_UNITY_IM = sqrt(3)/2 * 1j
 
 def quadratic(a: float, b: float , c: float
               ) -> tuple[complex, complex]:
+    
+    """Solve for roots using the quadratic formula.
+
+    Parameters
+    ----------
+    a : float
+        :math: `x**2` coefficient.
+    b : float
+        :math: `x` coefficient.
+    c : float
+        Constant coefficient.
+
+    Returns
+    -------
+    tuple[complex, complex]
+        Quadratic roots.
+
+    Examples
+    --------
+    >>> quadratic(3., 0., -1.)
+    ((0.5773502691896257+0j), (-0.5773502691896257+0j))
+    >>> quadratic(1, 2, 0)
+    (0j, (-2+0j))
+    >>> quadratic(1, 11, 28)
+    ((-4+0j), (-7+0j))
+
+    """
     det = b**2 - (4*a*c)
 
     if math.isclose(det, 0):
@@ -30,3 +57,8 @@ def cubic(a, b, c, d):
         cow("Degenerate MOOoo-ts")
 
     return (x1, x2, x3)
+
+if __name__ == " __main__ ":
+
+    import doctest
+    doctest.testmod()
